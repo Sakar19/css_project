@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resume — Sakar Panta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="main-title">Sakar Panta Portfolio</div>
+    <header>
+      <div class="brand">
+        <img src="assets/profile.jpeg" alt="Profile photo">
+        <div>
+          <h1>Sakar Panta</h1>
+          <h2 class="meta">Web Developer &amp; Former U.S. Army</h2>
+          <div class="meta"><span class="label">Location:</span> Cypress, CA <br><span class="label">Phone:</span> (714) 723-1783 <br><span class="label">Email:</span> <a href="mailto:sakar.panta@gmail.com">sakar.panta@gmail.com</a></div>
+        </div>
+      </div>
+      <nav>
+        <a href="resume.html">Resume</a>
+        <a href="cover-letter.html">Cover Letter</a>
+        <a href="career-goals.html">Career Goals</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <div id="current-date" class="meta" aria-live="polite"></div>
+
+      <section class="section">
+        <h2>Professional Summary</h2>
+        <p><em>Disciplined</em> and mission-driven professional with experience in leadership, operations, and front-end development. I focus on building accessible, responsive user interfaces and value teamwork and continuous improvement.</p>
+        <hr>
+      </section>
+
+      <article class="section">
+        <h3>Experience</h3>
+        <div>
+          <strong>Specialist — US Army</strong>
+          <div class="meta">Nov 2023 — Present</div>
+          <ol>
+            <li>Led cross-functional teams to accomplish mission objectives under tight timelines.</li>
+            <li>Coached and mentored team members to improve performance and readiness.</li>
+            <li>Maintained strict adherence to safety and operational procedures.</li>
+          </ol>
+        </div>
+      </article>
+
+      <section class="section">
+        <h3>Technical Skills</h3>
+        <p>Key competencies include:</p>
+        <ul class="skills">
+          <li>HTML5 &amp; Semantic Markup</li>
+          <li>CSS3 / Responsive Design</li>
+          <li>JavaScript (Vanilla)</li>
+        </ul>
+        <p>Other tools: <span>Git, VS Code, Browser DevTools</span></p>
+      </section>
+
+      <section class="section">
+        <h3>Skills Matrix</h3>
+        <table>
+          <caption>Proficiency across key areas</caption>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Beginner</th>
+              <th>Intermediate</th>
+              <th>Advanced</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML/CSS</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Leadership</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h3>Education</h3>
+        <p><strong>Bachelor of Computer Science</strong> — Western Governors University <br>
+        <span class="meta">Expected: 2026</span></p>
+      </section>
+
+      <!-- <section class="section">
+        <h3>Additional</h3>
+        <p>For a portfolio of projects, visit <a href="https://example.com" target="_blank" rel="noopener">my portfolio</a>.</p>
+        <p>Note: This is a <em>hypothetical</em> résumé for demonstration purposes.<br>Contact details are shown above.</p>
+      </section> -->
+
+      <footer>
+        <p><strong>References:</strong> Available upon request.</p>
+      </footer>
+
+    </main>
+
+    <script>
+      // Populate the date inside the div with id 'current-date'
+      (function(){
+        var d = new Date();
+        var opts = { year: 'numeric', month: 'long', day: 'numeric' };
+        var el = document.getElementById('current-date');
+        if(el) el.textContent = 'Generated on: ' + d.toLocaleDateString(undefined, opts);
+        console.log('Resume loaded for Sakar Panta —', d.toISOString());
+      })();
+    </script>
+  </div>
+</body>
+</html>
